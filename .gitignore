@@ -1,0 +1,44 @@
+# CodeIgniter
+application/logs/*
+!application/logs/index.html
+!application/logs/.htaccess
+application/cache/*
+!application/cache/index.html
+!application/cache/.htaccess
+*/config/development
+*/logs/log-*.php
+!*/logs/index.html
+*/cache/*
+!*/cache/index.html
+!*/cache/.htaccess
+/vendor/
+
+# Environment & secrets
+.env
+.env.*
+application/config/database.local.php
+
+# Uploaded product images (keep folder, ignore uploads)
+assets/images/product_image/*
+!assets/images/product_image/.gitkeep
+
+# IDE & OS
+__MACOSX/
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Temp / debug
+*.log
+_live_dump.sql
+
+# User guide build artifacts (if present)
+user_guide_src/build/*
+user_guide_src/cilexer/build/*
+user_guide_src/cilexer/dist/*
+user_guide_src/cilexer/pycilexer.egg-info/*
